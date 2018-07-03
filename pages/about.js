@@ -1,3 +1,14 @@
-import Link from 'next/link';
+import React, {Component} from 'react';
+import Layout from './../src/Components/Layout'
 
-export default () => <div><h1>About page.</h1> <Link href={'/'}>Home</Link></div>
+class About extends Component {
+	render() {
+		return (
+			<Layout>
+				<h1>About page.</h1>
+			</Layout>
+		);
+	}
+}
+
+export default About;
