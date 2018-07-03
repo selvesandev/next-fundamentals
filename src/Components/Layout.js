@@ -13,7 +13,11 @@ class Layout extends Component {
 					  crossorigin="anonymous"/>
 			</Head>
 			<Nav/>
-			{children}
+			<br/>
+			<br/>
+			<div className="container">
+				{children}
+			</div>
 		</div>);
 	}
 }
