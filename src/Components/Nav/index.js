@@ -9,12 +9,18 @@ export default () => <nav className="navbar navbar-expand-lg navbar-light bg-lig
 	<div className="collapse navbar-collapse" id="navbarNav">
 		<ul className="navbar-nav">
 			<li className="nav-item active">
-				<Link href={'/'}><a className="nav-link">Home <span className="sr-only">(current)</span></a></Link>
+				<Link href={'/'}><a  style={{fontSize: 18}} className="nav-link">Home <span
+					className="sr-only">(current)</span></a></Link>
 			</li>
 			<li className="nav-item">
 				<Link href={'/about'}><a className="nav-link">About</a></Link>
 			</li>
-
+			<li className="nav-item">
+				<Link href={'/blogs'}><a className="nav-link">Blog</a></Link>
+			</li>
+			<li className="nav-item">
+				<Link href={'/shows'}><a className="nav-link">TV Shows</a></Link>
+			</li>
 		</ul>
 	</div>
 </nav>

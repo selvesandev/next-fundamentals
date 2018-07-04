@@ -13,6 +13,13 @@ class Home extends Component {
 				<br/>
 				<p>Check current bitcoin rate.</p>
 				<Prices bpi={this.props.bpi}/>
+				<br/>
+				<br/>
+				<hr/>
+
+				<h2>Blogs</h2>
+
+
 			</Layout>
 		);
 	}
@@ -21,7 +28,7 @@ class Home extends Component {
 Home.getInitialProps = async function () {
 	const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
 	const data = await res.json();
-	console.log(data);
+	// console.log(data);
 	return {
 		bpi: data.bpi
 	};
